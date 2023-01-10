@@ -1,13 +1,4 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
-```
+## Recommendations for the CTF's
+* Use prevandao for randomness (valid in recent EVM pos chains)[https://soliditydeveloper.com/prevrandao]
+* extcodesize fails when called from constructor if you soley want to prevent contracts from interaction use tx.origin == msg.sender.
+* Prevent calling the pwn() twice in the same block to make sure only metamorphic contracts go through this ctf.
