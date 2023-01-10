@@ -1,3 +1,5 @@
+## kindly check the test case for the CTF's solution
+
 ## Recommendations for the CTF's
 * Use prevandao for randomness (valid in recent EVM pos chains)[https://soliditydeveloper.com/prevrandao]
 * extcodesize fails when called from constructor if you soley want to prevent contracts from interaction use tx.origin == msg.sender.
